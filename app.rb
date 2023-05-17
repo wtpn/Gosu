@@ -2,16 +2,16 @@ require 'gosu'
 
 class Tutorial < Gosu::Window
   def initialize
-    super 640, 480
-    self.caption = "Tutorial Game"
-    @bg = Gosu::Image.new("yamabit.jpeg", :tileable => true)
+    super 450, 340 # windowサイズ
+    self.caption = "Tutorial Game" # widowタイトル
+    @back_image = Gosu::Image.new("yamabit.jpeg", :tileable => true) # 画像を追加
   end
 
   def update
   end
 
   def draw
-    @bg.draw(100,100,100)
+    @back_image.draw(0,0,0) # 画像を表示
   end
 end
 
